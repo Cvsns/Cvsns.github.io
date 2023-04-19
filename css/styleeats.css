@@ -1,0 +1,236 @@
+.ubeeats {
+	animation:letters 3s ease 4500ms infinite;
+}
+@keyframes letters {
+  0% {opacity:0;}
+  100% {opacity:1.0;}
+}
+
+
+
+header {
+  background-color: orange;
+
+
+}
+
+header li {
+  list-style-type: none;
+}
+
+header {
+  text-align: center;
+}
+header h3 {
+    color: white;
+}
+
+.connexion a {
+  color:black;
+  border: 2px 2px 2px 2px;
+  background-color:orange;
+}
+
+.connexion a:hover {
+  box-shadow: 5px 5px 5px 5px;
+  border-radius: 2px 2px 2px 5px;
+  background-color: black;
+  color: white;
+  opacity: 10s;
+}
+
+.inser a {
+
+  color:orange;
+  border: 2px 2px 2px 2px;
+  background-color: black;
+}
+.inser a:hover {
+  box-shadow: 5px 5px 5px 5px;
+  border-radius: 2px 2px 2px 5px;
+  background-color: whitesmoke;
+  color: black;
+  opacity: 10s;
+}
+
+
+.photoshadow li {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300px;
+  }
+
+  .photoshadow img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px orange;
+  }
+  .photoshadow img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+  }
+  .photoshadow p {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: orange;
+    font-size: 1em;
+  }
+.livraison {
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    color: orange;
+  }
+
+input[type=submit]:hover {
+    font-size: 1em;
+    background-color: orange;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    }
+
+
+footer {
+  vertical-align: auto;
+  background-color: gray;
+}
+
+.nous {
+  background-color: gray;
+  font-size: 1.1em;
+  min-width: 100%;
+  color: orange;
+}
+
+
+
+
+.box {
+  display: flex;
+  justify-content: space-around;
+
+}
+.box {
+  width: 100%;
+  text-align: center;
+
+
+}
+.box a {
+  text-align: center;
+  float: center;
+  background-color: gray;
+  color: white;
+  
+}
+.box a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 0.5em;
+  color: white;
+}
+
+.box a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+  padding: 0 15px;
+  font-size:small;
+  color: orange;
+}
+
+.copy a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+  padding: 0 15px;
+  font-size:small;
+  color: orange;
+
+}
+
+.copy a {
+  text-align: center;
+  float: center;
+  background-color: gray;
+  color: white;
+  
+}
+.copy a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 0.5em;
+  color: white;
+}
+
+/*<div id="cgv">
+  <center>
+  <li><a href="cgv.html">Conditions Général de Ventes</a></li>
+  <li><a href="pc.html">Politique de Confidentialité</a></li>
+  <li><a href="cml.html">Contact et Mentions Légales</a></li>
+</div>
+</center>
+
+
+#cgv { 
+  display:inline-block;
+  text-align: center;
+  list-style-type:none;
+  background-color: gray;
+  color: white;
+}
+
+#cgv a {
+  text-align:center;
+  float:center; 
+  background-color: gray;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+}
+
+#cgv a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 0.5em;
+  color: white;}
+
+#cgv a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+    padding: 0 15px;
+    font-size:small;
+    color: orange;
+}
+*/
+#menu a {
+  color: white;
+}   
+#menu a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+    padding: 0 15px;
+    font-size:small;
+    color: black;
+    
+}
+
+
+
+  /*RESPONSIVE*/
+
+
+@media screen and (min-width: 400px) {
+  .carte {
+    width: 414px;
+    height: 500px;
+  }
+}
