@@ -97,7 +97,6 @@ sub {
 }
 
 img {
-  position: absolute;
   border: 0;
 }
 
@@ -222,4 +221,9 @@ th {
 }
 .moi {
   font-size: 14px;
+}
+
+#pc {
+  text-decoration: none;
+  color: white;
 }
