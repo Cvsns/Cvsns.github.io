@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="okebs.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-CclXgg8F5gSlqBCYJf1YvTNV6KXJtnzHDWFT4wz5Gw3FmL3lLuGUKZxP3Cgx4Gs/N7d4jzvkxauFCJwI4g5cWw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+        </script>
+    </script>
     <script src="js.js"></script>
 
 
     <title>Okebs</title>
+
+
 </head>
 <body>
 
@@ -24,7 +29,7 @@
             <div id="restaurant" style="background-color: rgb(66, 66, 66); color: white;">
                 <br>
                 <h1>O'kebs</h1>
-                <p>Bienvenue a notre restaurant overt de 11h00 a 23h00 non stop.</p>
+                <p>Bienvenue dans notre restaurant ouvert de 11h00 a 23h00 non stop.</p>
                 <p id="openingStatus"></p>
             </div>
         
@@ -34,17 +39,20 @@
                     const currentHour = currentTime.getHours();
                     const openingHour = 11;
                     const closingHour = 23;
-        
+            
                     if (currentHour >= openingHour && currentHour < closingHour) {
-                        return "On est actuellement ouvert";
+                        return { status: "On est actuellement ouvert", color: "green" };
                     } else {
-                        return "On est actuellement fermé.";
+                        return { status: "On est actuellement fermé.", color: "red" };
                     }
                 }
-        
+            
                 const openingStatusElement = document.getElementById("openingStatus");
-                openingStatusElement.textContent = checkOpeningHours();
+                const openingStatus = checkOpeningHours();
+                openingStatusElement.textContent = openingStatus.status;
+                openingStatusElement.style.color = openingStatus.color;
             </script>
+            
         
         </center>
         
@@ -64,7 +72,7 @@
             </span>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation;">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -81,14 +89,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="https://www.ubereats.com/fr/store/o-kebs/K8SFGvJBXPuWlARVRYOnnA?diningMode=DELIVERY">Commander sur Uber eats</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
         </ul>
         </div>
     </nav>
 
     <div class="video-container" style="border-radius: 10px; border: 3px solid #fa5334; box-shadow: 0 0 20px 10px rgba(250, 83, 52, 0.5);">
-        <video width="100%" height="100%" autoplay loop>
-            <source src="img/video.mp4" type="video/mp4">
-        </video>
+        <img src="img/video.gif" width="100%">
     </div>
     
     
@@ -96,35 +105,17 @@
 
 
     <center>
-<nav class="intro" style="background-color: rgb(66, 66, 66);">
-    <h2>Bonjour</h2>
-    <style>
-        @keyframes moveLogo {
-            0% { transform: translateX(0px); }
-            50% { transform: translateX(50px); }
-            100% { transform: translateX(0px); }
-        }
+        <nav class="intro">
+            <h2>Bonjour</h2>
+            <img src="img/logookebs.png" alt="logo" class="moving-logo">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae alias pariatur reiciendis ullam cupiditate, eveniet velit, tenetur repellat hic sequi itaque dignissimos! Sed totam veniam eveniet nesciunt maiores commodi omnis maxime, provident repellat. Veniam beatae dicta quae exercitationem labore!
+            </p>
+        </nav>
     
-        .moving-logo {
-            animation: moveLogo 3s infinite alternate; /* L'animation se répète indéfiniment */
-        }
-    </style>
-    
-    <img src="img/logookebs.png" alt="logo" class="moving-logo">
-    <p style="color: white;">
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae alias pariatur reiciendis ullam cupiditate, eveniet velit, tenetur repellat hic sequi itaque dignissimos! Sed totam veniam eveniet nesciunt maiores commodi omnis maxime, provident repellat. Veniam beatae dicta quae exercitationem labore!
-    </p>
-</center>
-
-
-<div id="Nos-menus">
-    <!--
-    <img src="img/burger.png" width="430px" height="700px" alt="">
-    <img src="img/sand.png" width="430px" height="700px">
-    -->
-    <img src="img/sandburg.png" width="430px" alt="">
-</div>
+        <div id="Nos-menus">
+            <img src="img/sandburg.png" alt="">
+        </div>
 
 </nav>
 <script src="js.js"></script>
@@ -136,7 +127,7 @@
 
 <footer class="text-center text-lg- text-white" style="background-color: rgb(66,66,66)";>
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <section class="d-flex justify-content-center justify-content-lg-between border-bottom">
         <!-- Left -->
     </section>
     <!-- Section: Social media -->
@@ -170,14 +161,14 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> Annecy, NCY 74000 FR, Rue de la rue</p>
+                    <h6 id="contact" class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Annecy, NCY 74000 FR,  <br>Rue de la rue</p>
                     <p>
                         <i class="fas fa-envelope me-3"></i>
                         info@example-okebs.com
                     </p>
-                    <p><i class="fas fa-phone me-3"></i> + 334 50 00 00 00</p>
-                    <p><i class="fas fa-print me-3"></i> + 336 50 00 00 00</p>
+                    <p><i class="fas fa-phone me-3; text-reset"></i> + 334 50 00 00 00</p>
+                    <p><i class="fas fa-print me-3;text-reset"></i> + 336 50 00 00 00</p>
                     <p>Ouverture du Lundi au Samedi de 11h à 23h non stop</p>
 
                 </div>

@@ -1,0 +1,39 @@
+    .navbar-nav .nav-link {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        color: white !important; /* Définissez la couleur du texte en blanc */
+    }
+    body {
+        margin: 0; /* Supprimez les marges par défaut du corps */
+        padding: 0; /* Supprimez les rembourrages par défaut du corps */
+    }
+    .intro {
+        background-color: rgb(66, 66, 66);
+        text-align: center; /* Centrer le contenu dans la div */
+        color: white;
+        margin: 0; /* Supprimez les marges par défaut de la classe .intro */
+        padding: 0; /* Supprimez les rembourrages par défaut de la classe .intro */
+    }
+    .moving-logo {
+        animation: moveLogo 3s infinite alternate;
+    }
+    p {
+        margin: 0; /* Supprimez les marges par défaut du paragraphe */
+    }
+
+    #Nos-menus {
+        text-align: center; /* Centrer le contenu dans la div */
+        margin: 0; /* Supprimez les marges par défaut de l'id #Nos-menus */
+        padding: 0; /* Supprimez les rembourrages par défaut de l'id #Nos-menus */
+    }
+    #Nos-menus img {
+        display: block; /* Assurez-vous que l'image est affichée comme un bloc pour éviter les problèmes d'espacement */
+        width: 100%; /* Pour s'assurer que l'image occupe toute la largeur de son conteneur */
+    }
+
+    @keyframes moveLogo {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(50px); }
+        100% { transform: translateX(0px); }
+    }
