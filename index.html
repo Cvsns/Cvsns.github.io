@@ -31,7 +31,7 @@
           <ul class="side-nav">
             <li class="is-active"><span>Accueil</span></li>
             <li><span>Mes projets</span></li>
-            <li><span>Compétences</span></li>
+            <li><span>Mes Compétences</span></li>
             <li><span>Me contacter</span></li>
             <li><span>A propos de moi</span></li>
           </ul>
@@ -40,8 +40,25 @@
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
+
                 <h1>CAVUS ENES</h1>
-                <h4>Développeur web<br> Ui Designer</h4>
+
+                <style>
+
+                  @keyframes erase {
+                    from { width: 100%; }
+                    to { width: 0; }
+                  }
+                  #devWeb{
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    animation: erase 4s steps(30, end) infinite;
+                  }
+                </style>
+                <h4><span id="devWeb">Développeur web</span></h4>
+
+
                 <button class="cta">A propos de moi
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -53,7 +70,7 @@
                 <img src="img/moia.png" alt="Welcome">
               </div>
               <div class="intro--options">
-                Je suis passionné par le monde du web depuis de nombreuses années et j'ai appris énormément en autodidacte. Récemment, j'ai suivi une formation de développeur web avec Le Wagon qui m'a permis de consolider mes connaissances et de découvrir de nouvelles techniques. Je suis constamment à la recherche de nouvelles connaissances pour approfondir mes compétences en développement web et je suis toujours prêt à essayer de nouveaux langages de programmation, frameworks et méthodes de travail. J'aime travailler en équipe et collaborer avec d'autres passionnés du web pour réaliser des projets intéressants et innovants.
+                Je suis passionné par le monde de l'informatique et intéressé par une alternance. Récemment, j'ai suivi une formation de développeur web avec Le Wagon qui m'a permis de consolider mes connaissances et de découvrir de nouvelles techniques. Je suis constamment à la recherche de nouvelles connaissances pour approfondir mes compétences en développement web et je suis toujours prêt à essayer de nouveaux langages de programmation, frameworks et méthodes de travail. J'aime travailler en équipe et collaborer avec d'autres passionnés du web pour réaliser des projets intéressants et innovants.
               </div>
             </div>
           </li>
@@ -116,15 +133,17 @@
                       <p class="slider--item-description">Projet effectué après la formation</p>
                     </a>
                   </li>
+
                   <li class="slider--item slider--item-right">
                     <a href="#0">
                       <div class="slider--item-image">
-                        <a href="Https://github.com/Cvsns/ma-meteo"><img src="img/meteo.png" alt="meteo"></a>
+                        <a href="indexmeteo.html"><img src="img/meteo.png" alt="meteo"></a>
                       </div>
                       <p class="slider--item-title"> Projet d'un site de météo</p>
                       <p class="slider--item-description">Projet effectué après la formation</p>
                     </a>
                   </li>
+                  
                   <li class="slider--item slider--item-right">
                     <a href="#0">
                       <div class="slider--item-image">
@@ -161,7 +180,9 @@
           </li>
           <li class="l-section section">
             <div class="skills">
-              <h2>Compétences</h2>
+              <br>
+              <br><br><br><br>
+              <h2>Mes Compétences</h2>
               <style>
                 .skills {
                   text-align: center;
@@ -171,14 +192,17 @@
                   display: flex;
                   flex-wrap: wrap;
                   justify-content: center;
-                  max-width: 600px; /* ajustez selon vos besoins */
-                  margin: 0 auto;
+                  max-width: 600px;
+                  margin: 30px;
+                  flex-direction: row;
+                  align-content: space-between;
+                  align-items: center;
                 }
             
                 .skills .logos img {
                   width: 50px;
-                  margin: 20px; /* Espacement entre les logos */
-                  opacity: 0; /* assurez-vous que les logos sont initialement invisibles */
+                  margin: 20px;
+                  opacity: 0; 
                   transform: translateX(100%);
                   animation: slideIn 1s forwards;
                 }
@@ -196,26 +220,25 @@
               </style>
               <div class="logos">
                 <p class="Compétences">
+                  <br>
                   <img src="https://imgs.search.brave.com/5E_3ouC-8qAebTs4ZAz6VouIwo7Wxr9yVTxBkFpcoh0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYxL0hUTUw1X2xv/Z29fYW5kX3dvcmRt/YXJrLnN2Zw.svg" width="50px" alt="html"></p>
                   <img src="https://imgs.search.brave.com/_L-kl-i8i-UK9FO7hwiZAqQB_NchiM9Hvfx_75-lW0A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA5/L0NTUy1Mb2dvLTUw/MHgzMTMucG5n" width="50px" alt="css"></p>
                   <img src="https://imgs.search.brave.com/n3H2P129ijLNSXjusD9d_sLWSQvt14iUDzchvaDzcPs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9ib290c3RyYXAt/NC5zdmc.svg" width="50px" alt="bootstrap"></p>
                   <img src="https://imgs.search.brave.com/kGYjzXTWUn3Fm87enANNbxf3DRPAfnQQQXs6cMNgx0A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZhL0phdmFTY3Jp/cHQtbG9nby5wbmc" width="50px" alt="js"></p>
+                  <img src="https://imgs.search.brave.com/4atq0PULQZp17A0WvTD0qR20X1q8qaBrc9CnoDTSQds/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy13b3JsZC5uZXQv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MTAvV29yZFByZXNz/LUxvZ28tNzAweDM5/NC5wbmc" width="50px" alt="wordpress"></p>
                   <img src="https://imgs.search.brave.com/KJJo5F6RnXbAlEpgO7yDtFhaiySENQmvNdqSBuQ9QYo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9icmFu/ZHNsb2dvcy5jb20v/d3AtY29udGVudC91/cGxvYWRzL2ltYWdl/cy9qYXZhLWxvZ28t/MS5wbmc" width="50px" alt="java"></p>
                   <img src="https://imgs.search.brave.com/vZA94P4XUmx01GpPE1mT9brWlq8MMqhMNzqCamvhrl0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3J1Ynk2/NTMwLmpwZw" width="50px" alt="ruby"></p>
                   <img src="https://imgs.search.brave.com/NOl0ApHPO4v-Iika_tMqpldRHC2qzKqQEi6BwYnbZJI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL1J1YnlfT25f/UmFpbHNfTG9nby5z/dmc.svg" width="50px" alt="rails"></p>
                   <img src="https://imgs.search.brave.com/Y_P76fzabawTW2gYhyK1ccy80stj2XWffWQX4R6ep3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzEwL3B5dGhvbi1s/b2dvLnBuZw" width="50px" alt="python"></p>
                   <img src="https://imgs.search.brave.com/zy5I-8owxROdTd8yyUrjXR2WjF1mdAyP170MErblTDg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL1Mvc3FsLWxv/Z28tQzM3MERFQTA2/Ni1zZWVrbG9nby5j/b20ucG5n" width="50px" alt="sql"></p>
-                  <img src="https://imgs.search.brave.com/qXDVSXD8Nnautca2OOwdPjjDb6_GOo4Lyy2bm-QexJc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzkxL09jdGljb25z/LW1hcmstZ2l0aHVi/LnN2Zw.svg" width="50px" alt="github"></p>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRFKUAwLfFz4a7EEtYc8SrMZJ3_6UAFqgC5g&s" width="50px" alt="github"></p>
                   <img src="https://imgs.search.brave.com/hhbrqY8ITb-X8wIraWMeO8fKs9rPWW9Vy23b0KYdp3c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL2dpdDY5/NjMuanBn" width="50px" alt="git"></p>
-                  <img src="https://imgs.search.brave.com/4TC_3NGrOILKj89MzjQY2MUwNDajqeRZaOh_YCkw9v4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2VjL0hlcm9rdV9s/b2dvLnN2Zw.svg" width="50px" alt="heroku"></p>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpuWvluCaxF7YGstwDrjHAiZ5L7YasIupESQ&s" width="50px" alt="heroku"></p>
                   <img src="https://imgs.search.brave.com/3Y2328PQL9DRYyThiifH7rngOS9QGIY5eEGxocgOEoE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzMzL0ZpZ21hLWxv/Z28uc3Zn.svg" width="50px" alt="figma"></p>
-                  <img src="https://imgs.search.brave.com/4atq0PULQZp17A0WvTD0qR20X1q8qaBrc9CnoDTSQds/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy13b3JsZC5uZXQv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MTAvV29yZFByZXNz/LUxvZ28tNzAweDM5/NC5wbmc" width="50px" alt="wordpress"></p>
               </div>
             </div>
           </li>
           
-
-
 
 
           <li class="l-section section">
@@ -240,10 +263,10 @@
             <div class="hire">
               <h2>A propos de moi</h2>
                 <p class="moi">Je suis une personne qui a travaillé dans plusieurs domaines différents, mais j'ai toujours été attiré par le domaine de l'informatique.
-                  En septembre 2022, j'ai eu la chance de me voir offrir une place pour intégrer un BTS SIO. Malheureusement, je n'ai pas trouvé d'entreprise pour mon alternance et j'ai été contraint d'arrêter en milieu d'année. Malgré cette difficulté, j'ai décidé de ne pas abandonner ma passion pour l'informatique.
-                  C'est pourquoi, en février 2023, j'ai rejoint le bootcamp intensif de 9 semaines avec Le Wagon pour me former au développement web. Au cours de cette formation, j'ai appris à maîtriser les langages de programmation, à créer des sites web dynamiques et à travailler en équipe.
+
                   Grâce à ma détermination et mon travail acharné, j'ai acquis une solide expérience pratique en développement web. Je suis fier de dire que j'ai acquis des compétences en HTML, CSS, JavaScript, Ruby on Rails, ainsi qu'une connaissance approfondie des bases de données et du travail collaboratif.
-                  Aujourd'hui, je suis prêt à relever tous les défis qui se présenteront à moi dans le domaine du développement web. Ma passion et mon engagement sont des qualités qui me permettent de surmonter tous les obstacles pour atteindre mes objectifs. Je suis convaincu que je suis destiné à un avenir radieux et prometteur dans le domaine de l'informatique.</p>
+                  <br><br>
+                  Aujourd'hui, je suis prêt à relever tous les défis qui se présenteront à moi dans le domaine du développement web. Ma passion et mon engagement sont des qualités qui me permettent de surmonter tous les obstacles pour atteindre mes objectifs. Je suis convaincu que je suis destiné à un avenir radieux et prometteur dans le domaine de l'informatique. Je suis passionné par l'informatique, et avec Le Wagon, j'ai appris énormément. Je suis très motivé pour continuer à apprendre et à progresser dans ce domaine.</p>
             </div>
           </li>
       </div>
@@ -252,14 +275,13 @@
   <ul class="outer-nav">
     <li class="is-active">Accueil</li>
     <li>Mes projets</li>
-    <li>Me contacter</li>
+    <li>Mes compétences</li>
     <li>A propos de moi</li>
   </ul>
 </div>
 <div class="pc">
-   <center> <span><a href="pc.html">Politique de Confidentialité</a></span></center>
+  <center> <span><a href="pc.html">Politique de Confidentialité</a></span></center>
 </div>
-
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="js/functions-min.js"></script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>météo</title>
+    <link rel="stylesheet" href="stylemeteo.css">
+
+</head>
+
+<body>
+    <center>
+    <div class="container pt-5 mt-5">
+  
+        <div class="row justify-content-center">
+          
+          <div class="col-md-8">
+            <!-- Titre -->
+            <h1 class="text-center mt-5">La Météo de </h1>
+            
+            <!-- Ville / Temperature -->
+            <div class="text-center">
+              <span id="ville">Paris</span>
+              
+              <div id="temperature">
+                <span id="temperature_label">
+                  xx.x
+                </span> °C
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <!-- Changer de ville -->
+            <div id="changer" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase d-inline-block">
+              Changer de ville
+            </div>
+
+          </div>
+          
+
+          <h1 class="villes">Vous pouvez changer la ville que vous souhaitez, Istanbul, Genève, Paris, Lyon, Amsterdam, Londres, Washington DC, Kinshasa etc...</h1>
+        </div>
+        
+      </div>
+<script>
+    
+    let ville = 'Paris';
+recevoirTemperature(ville);
+
+let button = document.querySelector('#changer');
+button.addEventListener('click', () => {
+  ville = prompt('Choisissez une ville :');
+  recevoirTemperature(ville);
+});
+
+function recevoirTemperature(ville) {
+  const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&appid=eb3e55ca0093756f2541d5ad27c5021c&units=metric';
+  
+  let requete = new XMLHttpRequest();
+  requete.open('GET', url);
+  requete.responseType = 'json';
+  requete.send();
+
+  requete.onload = function() {
+    if (requete.readyState === XMLHttpRequest.DONE) {
+      if (requete.status === 200) {
+        let reponse = requete.response;
+        let ville = reponse.name;
+        let temperature = reponse.main.temp;
+        document.querySelector('#ville').textContent = ville;
+        document.querySelector('#temperature_label').textContent = temperature;
+      } else {
+        alert('Un problème est intervenu, merci de revenir plus tard.');
+      }
+    }
+  }
+}
+
+
+
+</script>
+</center>
+</body>
+</html>
