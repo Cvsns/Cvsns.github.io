@@ -30,7 +30,8 @@
         <nav class="l-side-nav">
           <ul class="side-nav">
             <li class="is-active"><span>Accueil</span></li>
-            <li><span> Mes projets</span></li>
+            <li><span>Mes projets</span></li>
+            <li><span>Compétences</span></li>
             <li><span>Me contacter</span></li>
             <li><span>A propos de moi</span></li>
           </ul>
@@ -158,6 +159,65 @@
               </div>
             </div>
           </li>
+          <li class="l-section section">
+            <div class="skills">
+              <h2>Compétences</h2>
+              <style>
+                .skills {
+                  text-align: center;
+                }
+            
+                .skills .logos {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  max-width: 600px; /* ajustez selon vos besoins */
+                  margin: 0 auto;
+                }
+            
+                .skills .logos img {
+                  width: 50px;
+                  margin: 20px; /* Espacement entre les logos */
+                  opacity: 0; /* assurez-vous que les logos sont initialement invisibles */
+                  transform: translateX(100%);
+                  animation: slideIn 1s forwards;
+                }
+            
+                @keyframes slideIn {
+                  0% {
+                    opacity: 0;
+                    transform: translateX(100%);
+                  }
+                  100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                  }
+                }
+              </style>
+              <div class="logos">
+                <p class="Compétences">
+                  <img src="https://imgs.search.brave.com/5E_3ouC-8qAebTs4ZAz6VouIwo7Wxr9yVTxBkFpcoh0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYxL0hUTUw1X2xv/Z29fYW5kX3dvcmRt/YXJrLnN2Zw.svg" width="50px" alt="html"></p>
+                  <img src="https://imgs.search.brave.com/_L-kl-i8i-UK9FO7hwiZAqQB_NchiM9Hvfx_75-lW0A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA5/L0NTUy1Mb2dvLTUw/MHgzMTMucG5n" width="50px" alt="css"></p>
+                  <img src="https://imgs.search.brave.com/n3H2P129ijLNSXjusD9d_sLWSQvt14iUDzchvaDzcPs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9ib290c3RyYXAt/NC5zdmc.svg" width="50px" alt="bootstrap"></p>
+                  <img src="https://imgs.search.brave.com/kGYjzXTWUn3Fm87enANNbxf3DRPAfnQQQXs6cMNgx0A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZhL0phdmFTY3Jp/cHQtbG9nby5wbmc" width="50px" alt="js"></p>
+                  <img src="https://imgs.search.brave.com/KJJo5F6RnXbAlEpgO7yDtFhaiySENQmvNdqSBuQ9QYo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9icmFu/ZHNsb2dvcy5jb20v/d3AtY29udGVudC91/cGxvYWRzL2ltYWdl/cy9qYXZhLWxvZ28t/MS5wbmc" width="50px" alt="java"></p>
+                  <img src="https://imgs.search.brave.com/vZA94P4XUmx01GpPE1mT9brWlq8MMqhMNzqCamvhrl0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3J1Ynk2/NTMwLmpwZw" width="50px" alt="ruby"></p>
+                  <img src="https://imgs.search.brave.com/NOl0ApHPO4v-Iika_tMqpldRHC2qzKqQEi6BwYnbZJI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL1J1YnlfT25f/UmFpbHNfTG9nby5z/dmc.svg" width="50px" alt="rails"></p>
+                  <img src="https://imgs.search.brave.com/Y_P76fzabawTW2gYhyK1ccy80stj2XWffWQX4R6ep3g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzEwL3B5dGhvbi1s/b2dvLnBuZw" width="50px" alt="python"></p>
+                  <img src="https://imgs.search.brave.com/zy5I-8owxROdTd8yyUrjXR2WjF1mdAyP170MErblTDg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL1Mvc3FsLWxv/Z28tQzM3MERFQTA2/Ni1zZWVrbG9nby5j/b20ucG5n" width="50px" alt="sql"></p>
+                  <img src="https://imgs.search.brave.com/qXDVSXD8Nnautca2OOwdPjjDb6_GOo4Lyy2bm-QexJc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzkxL09jdGljb25z/LW1hcmstZ2l0aHVi/LnN2Zw.svg" width="50px" alt="github"></p>
+                  <img src="https://imgs.search.brave.com/hhbrqY8ITb-X8wIraWMeO8fKs9rPWW9Vy23b0KYdp3c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL2dpdDY5/NjMuanBn" width="50px" alt="git"></p>
+                  <img src="https://imgs.search.brave.com/4TC_3NGrOILKj89MzjQY2MUwNDajqeRZaOh_YCkw9v4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2VjL0hlcm9rdV9s/b2dvLnN2Zw.svg" width="50px" alt="heroku"></p>
+                  <img src="https://imgs.search.brave.com/3Y2328PQL9DRYyThiifH7rngOS9QGIY5eEGxocgOEoE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzMzL0ZpZ21hLWxv/Z28uc3Zn.svg" width="50px" alt="figma"></p>
+                  <img src="https://imgs.search.brave.com/4atq0PULQZp17A0WvTD0qR20X1q8qaBrc9CnoDTSQds/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy13b3JsZC5uZXQv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MTAvV29yZFByZXNz/LUxvZ28tNzAweDM5/NC5wbmc" width="50px" alt="wordpress"></p>
+              </div>
+            </div>
+          </li>
+          
+
+
+
+
           <li class="l-section section">
             <div class="contact">
               <div class="contact--lockup">
