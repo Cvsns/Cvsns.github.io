@@ -42,9 +42,9 @@
           </div>
           
 
-          <h1 class="villes">Vous pouvez changer la ville que vous souhaitez, Istanbul, Genève, Paris, Lyon, Amsterdam, Londres, Washington DC, Kinshasa etc...</h1>
+          <h2 class="villes">Vous pouvez changer la ville que vous souhaitez, Istanbul, Genève, Paris, Lyon, Amsterdam, Londres, Washington DC, Kinshasa etc...</h2>
         </div>
-        
+        <img src="https://imgs.search.brave.com/YomsJRxhGJBsplHjsD5vMCtR42Z83F1WZxjDO3Oby5M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/eG4tLWljbmUtd3Fh/LmNvbS9pbWFnZXMv/aWNvbmVzLzEvNy9h/bm9ueW1vdXMtc2lt/cGxlLXdlYXRoZXIt/c3ltYm9scy0xMy5w/bmc" width="50px">
       </div>
 <script>
     
@@ -73,12 +73,15 @@ function recevoirTemperature(ville) {
         let temperature = reponse.main.temp;
         document.querySelector('#ville').textContent = ville;
         document.querySelector('#temperature_label').textContent = temperature;
+
+        
       } else {
         alert('Un problème est intervenu, merci de revenir plus tard.');
       }
     }
   }
 }
+
 
 
 
