@@ -10,10 +10,10 @@
     border: solid red;
 }
 
-img.card-img-top:hover {
+/* img.card-img-top:hover {
     border: solid green;
 }
-
+*/
 body {
     background-color: black;
 }
@@ -30,11 +30,12 @@ body {
     padding: 10px;
     color: white !important; /* Définissez la couleur du texte en blanc */
 }
+
 .navbar-brand {
     padding: 30px;
 }
 
-.flame-shadow {
+/* .flame-shadow {
     margin: -10px;
     box-shadow: 
         0 0 0 10px rgba(255, 255, 255, 0.33),
@@ -62,6 +63,7 @@ body {
         0 0 90px 10px  rgba(255, 255, 255, 0.33),
         0 0 100px 10px  rgba(255, 255, 255, 0.33);
 }
+*/
 
     .login-container {
         color: white;
