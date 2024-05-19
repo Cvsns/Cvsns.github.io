@@ -68,7 +68,7 @@
 
       <div class="login-container">
         <h2>Connectez-vous</h2>
-        <form action="/login.php" method="post">
+        <form action="/auth.php" method="post">
             <label for="email">Email :</label>
             <input type="text" id="email" name="email" required>
             <label for="password">Mot de passe :</label>
