@@ -15,9 +15,9 @@
         margin: 0; /* Supprimez les marges par défaut de la classe .intro */
         padding: 0; /* Supprimez les rembourrages par défaut de la classe .intro */
     }
-    .moving-logo {
+    /* .moving-logo {
         animation: moveLogo 3s infinite alternate;
-    }
+    } */
     p {
         margin: 0; /* Supprimez les marges par défaut du paragraphe */
     }
