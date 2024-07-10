@@ -124,13 +124,13 @@ a:hover {
 
 /* Navbar styles */
 .navbar {
-    background-color: #f8f9fa;
+    background-color: #11273d;
     border-bottom: 1px solid #e0e0e0;
 
 }
 
 .navbar {
-    background-color: black !important;
+    background-color: rgb(12, 29, 67) !important;
 }
 
 .navbar-brand {
@@ -219,4 +219,9 @@ footer i {
 }
 .navbar-toggler-icon {
     color: white !important;
+}
+
+.card img {
+    border: solid rgb(194, 193, 193);
+    border-radius: 10px;
 }
